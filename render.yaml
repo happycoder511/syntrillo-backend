@@ -1,0 +1,5 @@
+services:
+  - name: wegb
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    workingDir: /app/stroke-backend
