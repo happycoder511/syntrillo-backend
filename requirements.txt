@@ -1,9 +1,4 @@
-langchain==0.0.202
 flask
 flask_cors
-faiss-cpu
 openai
-python-dotenv
-pandas
-sentence_transformers
 gunicorn

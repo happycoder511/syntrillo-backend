@@ -1,22 +1,22 @@
-import os
+# import os
 
 from flask import Flask, request
 from flask_cors import CORS
 
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.docstore.document import Document
-from langchain.chains import ConversationalRetrievalChain
-from langchain.document_loaders.csv_loader import CSVLoader
-from langchain.chat_models import ChatOpenAI
+# from langchain.embeddings.openai import OpenAIEmbeddings
+# from langchain.vectorstores import FAISS
+# from langchain.docstore.document import Document
+# from langchain.chains import ConversationalRetrievalChain
+# from langchain.document_loaders.csv_loader import CSVLoader
+# from langchain.chat_models import ChatOpenAI
 
-from dotenv import load_dotenv
-from werkzeug.utils import secure_filename
+# from dotenv import load_dotenv
+# from werkzeug.utils import secure_filename
 
 import openai
 
 ### Load environment variables from .env
-load_dotenv()
+# load_dotenv()
 
 ### Directory path for uploading files and the extension of allowed files.
 UPLOAD_FOLDER = './traindata'
